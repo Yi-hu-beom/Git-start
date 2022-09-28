@@ -1,5 +1,20 @@
-﻿빌드 시작...
-1>------ 빌드 시작: 프로젝트: Project1, 구성: Debug x64 ------
-1>소스.c
-1>Project1.vcxproj -> C:\Users\HIMART\source\repos\Project1\x64\Debug\Project1.exe
-========== 빌드: 1 성공, 0 실패, 0 최신 업데이트, 0 건너뛰기 ==========
+﻿#include <stdio.h>
+
+int main(void)
+{
+    int num = 4;
+    for (int i = 0; i < num; i++)
+    {
+        for (int j = num - 1; j > i; j--)
+        {
+            printf(" ");
+        }
+
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
